@@ -1,16 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebApp</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>private Clock Demo</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- http://blog.stevenlevithan.com/archives/date-time-format -->
+  <script src="date.format.js"></script>
+  <!-- font style -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Crimson+Pro&family=Inter:wght&family=Open+Sans:ital@1&family=Oswald:wght@200&display=swap" />
+  <!-- css -->
+  <link rel="stylesheet" href="css/main.css" />
 </head>
+<style>
+  .labdate {
+    font-size: 50px;
+  }
+
+  /* .icon-app header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  } */
+
+  .morning,
+  .icon-app span {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.3rem;
+    font-weight: 400;
+  }
+</style>
 
 <body>
-    <h1>Hello World!!!</h1>
+  <div class="background"></div>
+  <div id="main" class="top-widgets">
+    <div id="lab" class="labdate">
+      <div class="icon-app">
+        <header>
+          <img class="icon" />
+          <h2 id="greeting" class="morning">{{greetingData}}</h2>
+        </header>
+      </div>
+      <!-- 日期: {{ dateData |
+      dateFormatFilter('yyyy-mm-dd HH:MM:ss') }} -->
+    </div>
 
+    <br /><br /><br /><br />
+    <div id="time" class="demo">
+      <!-- <img src="./assets/svg/apple.svg" alt="apple icon" aria-hidden="true" class="apple" /> -->
+      <img class="rainbow" width="36" height="38"
+        src="https://upload.wikimedia.org/wikipedia/commons/8/84/Apple_Computer_Logo_rainbow.svg" alt="rainbow apple" />
+      {{ dateClock | dateFormatFilter('yyyy-mm-dd ')}}
+      <div id='timezone-zh' class='timezone-demo'>{{ dateClock | dateFormatFilter(' h:MM:ss TT')}}</div>
+    </div>
+  </div>
+  <script>
+    const background = document.querySelector(".background");
+    const icon = document.querySelector(".icon");
+
+    // add class name on .background Elemen
+    background.classList.add("bg-day");
+    background.classList.add("day");
+
+    // icon 
+    icon.src = "./assets/svg/icon-sun.svg";
+    icon.setAttribute("alt", "sun icon");
+    icon.setAttribute("width", "100");
+    icon.setAttribute("heigth", "100");
+
+
+    Vue.filter("dateFormatFilter", function (value, formatStr) {
+      return value.format(formatStr);
+    });
+    let now = new Date();
+    var timeApp = new Vue({
+      el: "#time",
+      data: {
+        dateClock: new Date(),
+      },
+      mounted() {
+        this.dateClock = new Date();
+        /*The setInterval() method, offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.*/
+        setInterval(() => {
+          this.dateClock = new Date();
+        }, 1000);
+      },
+    });
+
+    // Origin Component, applicate greeting
+    var labApp = new Vue({
+      el: "#lab",
+      data: {
+        greetingData: "Good Morning~",
+      },
+      methods: {
+        setTime() {
+          setTimeout((this.dateDate = new Date()), 500);
+        },
+      },
+      mounted() {
+        /*The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.*/
+        this.dateData = new Date();
+        setTimeout(() => {
+          this.dateData = new Date();
+        }, 500);
+      },
+    });
+  </script>
 </body>
 
 </html>
