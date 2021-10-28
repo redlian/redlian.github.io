@@ -38,11 +38,12 @@ body {
 }
 
 .timezone-demo {
-  font-family: "Open Sans", sans-serif;
-  font-size: 45px;
+  font-family: "Oswald", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-size: 55px;
   /* line-height: 10rem; */
   /* letter-spacing: -2.5px; */
-  padding: 1.6rem 1.6rem 1.6rem 0;
+  padding: 1.6rem 1.6rem 1.6rem 10rem;
 }
 
 .icon-app {
