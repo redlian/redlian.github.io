@@ -42,7 +42,7 @@
       <div class="icon-app">
         <header>
           <img class="icon" />
-          <h2 id="greeting" class="morning">{{greetingData}}</h2>
+          <div id="greeting" class="check_greeting"> {{ greetingData }}</div>
         </header>
       </div>
       <!-- 日期: {{ dateData |
@@ -60,6 +60,7 @@
   </div>
   <script>
     const background = document.querySelector(".background");
+    const checkgreeting = document.querySelector(".check_greeting");
     const icon = document.querySelector(".icon");
 
     // add class name on .background Elemen
@@ -71,6 +72,8 @@
     icon.setAttribute("alt", "sun icon");
     icon.setAttribute("width", "100");
     icon.setAttribute("heigth", "100");
+
+
 
 
     Vue.filter("dateFormatFilter", function (value, formatStr) {
@@ -91,16 +94,27 @@
       },
     });
 
+
+    var hour = now.getHours()
+    let msg = '';
+    console.log('-------' + now);
+    if (hour >= 5 && hour <= 11) {
+      msg = "Morning";
+    } else if (hour >= 12 && hour <= 17) {
+      msg = "Afternoon";
+    } else {
+      msg = "Evening";
+    }
+    checkgreeting.textContent = `Good ${msg}`;
+
     // Origin Component, applicate greeting
     var labApp = new Vue({
       el: "#lab",
       data: {
-        greetingData: "Good Morning~",
+        greetingData: "Hello World !!",
       },
+
       methods: {
-        setTime() {
-          setTimeout((this.dateDate = new Date()), 500);
-        },
       },
       mounted() {
         /*The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.*/
