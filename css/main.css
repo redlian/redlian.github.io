@@ -1,5 +1,6 @@
 body {
-  font-family: "Crimson Pro", serif;
+  font-family: "Noto Sans TC", sans-serif; /* 思源黑體*/
+  /* font-family: "Crimson Pro", serif; */
   /* font-family: 'Indie Flower', cursive; */
   /* font-size: 52px; */
 }
@@ -38,9 +39,9 @@ body {
 }
 
 .timezone-demo {
-  font-family: "Oswald", sans-serif;
+  /* font-family: "Oswald", sans-serif; */
   /* font-family: "Open Sans", sans-serif; */
-  font-size: 55px;
+  /* font-size: 55px; */
   /* line-height: 10rem; */
   /* letter-spacing: -2.5px; */
   padding: 1.6rem 1.6rem 1.6rem 10rem;
