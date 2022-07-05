@@ -7,8 +7,8 @@ background.classList.add("bg-day");
 background.classList.add("day");
 
 // icon
-icon.src = "./assets/svg/icon-sun.svg";
-icon.setAttribute("alt", "sun icon");
+// icon.src = "./assets/svg/icon-sun.svg";
+// icon.setAttribute("alt", "sun icon");
 icon.setAttribute("width", "100");
 icon.setAttribute("heigth", "100");
 
@@ -35,10 +35,16 @@ var hour = now.getHours();
 let msg = "";
 console.log("-------" + now);
 if (hour >= 5 && hour <= 11) {
+  icon.src = "./assets/svg/icon-sun.svg";
+  icon.setAttribute("alt", "sun icon");
   msg = "Morning ☁";
 } else if (hour >= 12 && hour <= 17) {
+  icon.src = "./assets/svg/night_moon_icon.svg";
+  icon.setAttribute("alt", "noon icon");
   msg = "Afternoon ༄ ࿓";
 } else {
+  icon.src = "./assets/svg/night_moon_icon.svg";
+  icon.setAttribute("alt", "moon icon");
   msg = "Evening ☽";
 }
 checkgreeting.textContent = `Good ${msg}`;
