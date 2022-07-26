@@ -1,4 +1,6 @@
 #!/bin/sh
 
-echo -e "\033[43m\033[30mproject: redlian.github.io \033[40m "
+echo -e "\033[43m\033[30mproject: redlian.github.io \033[0m"
 echo -e "`pwd`"
+export base_home=`pwd`
+export DEV_HOME="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
