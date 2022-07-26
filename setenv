@@ -4,3 +4,13 @@ echo -e "\033[43m\033[30mproject: redlian.github.io \033[0m"
 echo -e "`pwd`"
 export base_home=`pwd`
 export DEV_HOME="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+####=========================================
+export ECLIPSE_HOME=
+export VSCODE_HOME=
+export DBEAVER_HOME=
+####-----------------------------------------
+export PATH=$PATH:$ECLIPSE_HOME
+export PATH=$PATH:$VSCODE_HOME
+export PATH=$PATH:$DBEAVER_HOME
+####=========================================
