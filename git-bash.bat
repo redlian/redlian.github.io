@@ -18,6 +18,6 @@ exit 0
 @REM :INSTALL
 @REM if not exist "%DEV_HOME%\git\git-bash.exe" (
 @REM     curl -L -o %DEV_HOME%\tmp\PortableGit.7z.exe https://github.com/git-for-windows/git/releases/download/v2.30.1.windows.1/PortableGit-2.30.1-64-bit.7z.exe
-@REM     7za x -r -o %DEV_HOME%\git %DEV_HOME%\tmp\PortableGit.7z.exe
+@REM     7za x -r -o%DEV_HOME%\git %DEV_HOME%\tmp\PortableGit.7z.exe
 @REM     %BASE_DIR%\git\git-bash.exe --no-needs-console --hide --no-cd --command=%DEV_HOME%\git\post-install.bat
 @REM )
