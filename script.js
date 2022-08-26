@@ -16,6 +16,19 @@ Vue.filter("dateFormatFilter", function (value, formatStr) {
   return value.format(formatStr);
 });
 let now = new Date();
+var dateApp = new Vue({
+  el: "#localdate",
+  data: {
+    dateClock: new Date(),
+  },
+  mounted() {
+    this.dateClock = new Date();
+    /*The setInterval() method, offered on the Window and Worker interfaces, repeatedly calls a function or executes a code snippet, with a fixed time delay between each call.*/
+    setInterval(() => {
+      this.dateClock = new Date();
+    }, 1000);
+  },
+});
 var timeApp = new Vue({
   el: "#time",
   data: {
@@ -29,6 +42,7 @@ var timeApp = new Vue({
     }, 1000);
   },
 });
+
 
 ///
 var hour = now.getHours();

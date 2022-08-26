@@ -30,8 +30,20 @@ body {
 .demo {
   color: aliceblue;
   font-size: 50px;
-  bottom: 0;
+  /* bottom: 0; */
   position: fixed;
+  /* font-size: 3rem; */
+  line-height: 3.5rem;
+  letter-spacing: -2.5px;
+  padding: 1.6rem 1.6rem 1.6rem 0;
+}
+
+.clock{
+  text-align: center;
+  color: aliceblue;
+  font-size: 100px;
+  bottom: 0;
+  position: inherit;
   /* font-size: 3rem; */
   line-height: 3.5rem;
   letter-spacing: -2.5px;
