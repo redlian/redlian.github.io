@@ -2,9 +2,7 @@ const background = document.querySelector(".background");
 const checkgreeting = document.querySelector(".check_greeting");
 const icon = document.querySelector(".icon");
 
-// add class name on .background Elemen
-background.classList.add("bg-day");
-background.classList.add("day");
+
 
 // icon
 // icon.src = "./assets/svg/icon-sun.svg";
@@ -48,15 +46,27 @@ var timeApp = new Vue({
 var hour = now.getHours();
 let msg = "";
 console.log("-------" + now);
+
+// 清除 background image class
+background.classList.forEach((el) => {
+  if ('background' !== el) {
+    background.classList.remove(el);
+  }
+});
+
 if (hour >= 5 && hour <= 11) {
+  // add class name on .background Elemen
+  background.classList.add("bg-day");
   icon.src = "./assets/svg/icon-sun.svg";
   icon.setAttribute("alt", "sun icon");
   msg = "Morning ☁";
 } else if (hour >= 12 && hour <= 17) {
+  background.classList.add("bg-night");
   icon.src = "./assets/svg/night_moon_icon.svg";
   icon.setAttribute("alt", "noon icon");
   msg = "Afternoon ༄ ࿓";
 } else {
+  background.classList.add("bg-night");
   icon.src = "./assets/svg/night_moon_icon.svg";
   icon.setAttribute("alt", "moon icon");
   msg = "Evening ☽";

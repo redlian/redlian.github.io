@@ -131,3 +131,20 @@ body {
     background-image: url(../assets/img/bg-image-daytime.jpg);
   }
 }
+
+.bg-night {
+  background-image: url(../assets/img/bg-night.jpg);
+}
+
+@media screen and (min-width: 768px) {
+  .bg-night {
+    background-image: url(../assets/img/bg-night.jpg);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bg-night {
+    background-image: url(../assets/img/bg-night.jpg);
+  }
+}
+
