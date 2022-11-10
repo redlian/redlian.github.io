@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evan's Blog Practice</title>
+  <link rel="stylesheet" href="https://redlian.github.io/css/style.css">
+  <link rel="stylesheet" href="https://redlian.github.io/plugings/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="https://redlian.github.io/plugings/bootstrap.min.css" />
+  <script src="https://redlian.github.io/plugings/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container  ">
+        <a href="#" class="navbar-brand">
+          <div class="text-body">Evan's Blog</div>
+        </a>
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav me-auto ">
+            <li class="nav-item">
+              <a href="" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">About Me</a>
+            </li>
+          </ul>
+          <div class="search p-3">
+            <span class="navbar-text">
+              Search
+            </span>
+            <button class="search-btn">
+              <i class="ti-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="section-m">
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 pr-lg-5 index-about-me">
+          <div id="my_box">
+            <h5 class="text">About Me</h5>
+            <div style="text-align: center;">
+              <button id="start" class="btn btn-primary">Start</button>
+              <button id="stop" class="btn btn-secondary">Stop</button>
+            </div>
+          </div>
+          <div id="my_box">
+            <div>
+              <ul>
+                <li style="margin-right: 0.5em">
+                  <a href="https://minify.js.org/">
+                    <i class="ti-link"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/redlian/">
+                    <i class="ti-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="my_box">
+            <h5>Content</h5>
+            <div>
+              <ul class="list-inline social-links">
+                <li id="listicon" class="list-inline-item">
+                  <a href="https://minify.js.org/">
+                    <i class="ti-link"></i>
+                  </a>
+                </li>
+                <li id="listicon" class="list-inline-item">
+                  <a href="https://github.com/redlian/">
+                    <i class="ti-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8"></div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let nIntervId;
+
+    function changeColor() {
+      // check if an interval has already been set up
+      if (!nIntervId) {
+        nIntervId = setInterval(flashText, 1000);
+      }
+    }
+
+    function flashText() {
+      const oElem = document.getElementById("my_box");
+      oElem.className = oElem.className === "go" ? "stop" : "go";
+    }
+
+    function stopTextColor() {
+      clearInterval(nIntervId);
+      // release our intervalID from the variable
+      nIntervId = null;
+    }
+
+    document.getElementById("start").addEventListener("click", changeColor);
+    document.getElementById("stop").addEventListener("click", stopTextColor);
+
+
+  </script>
+
+</body>
+
+</html>
