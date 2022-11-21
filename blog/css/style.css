@@ -4,7 +4,7 @@
 }
 
 @media screen and (max-width:768px) {
-  .section-m{
+  .index-about-me{
     display: none;
   }
 }
