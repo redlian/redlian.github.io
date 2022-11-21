@@ -9,6 +9,14 @@
   }
 }
 
+.title-h{
+  transform: scale(1);
+  transition: all ease-in-out 1s;
+}
+
+.title-h:hover{
+  transform: scale(1.2);
+}
 
 h5 {
   display: inline-block;
