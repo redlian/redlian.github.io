@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evan's Blog Practice</title>
-  <link rel="stylesheet" href="https://redlian.github.io/blog/css/style.css">
+  <!-- <link rel="stylesheet" href="https://redlian.github.io/blog/css/style.css"> -->
+  <link rel="stylesheet" href="/blog/css/style.css">
   <link rel="stylesheet" href="https://redlian.github.io/plugings/themify-icons/themify-icons.css">
   <link rel="stylesheet" href="https://redlian.github.io/plugings/bootstrap.min.css" />
+  <script src="https://redlian.github.io/plugings/jquery/jquery-3.6.3.min.js"></script>
   <script src="https://redlian.github.io/plugings/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -17,7 +19,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container  ">
         <a href="#" class="navbar-brand">
-          <div class="text-body title-h">Evan's Blog</div>
+          <div class="text-primary title-h">Evan's Blog</div>
         </a>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navigation">
           <i class="ti-menu h3"></i>
@@ -25,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navigation">
           <ul class="navbar-nav me-auto ">
             <li class="nav-item">
-              <a href="" class="nav-link">Blog</a>
+              <a href="/blog/pre-index.html" class="nav-link">Blog</a>
             </li>
             <li class="nav-item">
               <a href="" class="nav-link">About Me</a>
@@ -35,7 +37,7 @@
             <span class="navbar-text">
               Search
             </span>
-            <button class="search-btn">
+            <button id="searchbtn" class="search-btn">
               <i class="ti-search"></i>
             </button>
           </div>
@@ -46,9 +48,9 @@
 
   <section class="section-m">
     <div class="container">
-      <div class="row">
+      <div class="row ">
         <!-- Menu -->
-        <div class="col-lg-3 pr-lg-5 index-about-me">
+        <div class="col-lg-4 pr-lg-5 index-about-me">
           <div id="my_box">
             <h5 class="text">About Me</h5>
             <div style="text-align: center;">
@@ -79,15 +81,63 @@
           </div>
         </div>
         <!-- Content -->
-        <div class="col-md-8">
-          <h3>Title</h3>
-          <p>
-            Introduction
-          </p>
+        <div class="col-lg-8">
+          <div class="col-lg-10 ">
+            <h3>Title 1</h3>
+            <p class="content">
+              <a href="#anchor-point">
+                anchor-point
+              </a>
+              Introduction
+            </p>
+          </div>
+          <div class="col-lg-10 ">
+            <h3>Title 2</h3>
+            <p class="content">
+              Introduction 2
+
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam impedit architecto similique asperiores,
+              deleniti doloremque expedita corporis veritatis amet praesentium saepe quod est ducimus, minus fugit
+              repellendus placeat consequatur magni.
+            </p>
+          </div>
+          <div class="col-lg-10 ">
+            <h3>Title 3</h3>
+            <p class="content">
+              Introduction 3
+
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam impedit architecto similique asperiores,
+              deleniti doloremque expedita corporis veritatis amet praesentium saepe quod est ducimus, minus fugit
+              repellendus placeat consequatur magni.
+            </p>
+          </div>
+          <div class="col-lg-10 ">
+            <h3>Title 4</h3>
+            <p class="content">
+              Introduction 4
+
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptate perspiciatis odit! Doloremque,
+              quis et ipsam error consequatur hic aspernatur ab sed vitae reiciendis eaque nihil natus exercitationem
+              dolorum modi.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <div class="container">
+    <h2>
+      <a id="anchor-point" href="#anchor-point"></a>
+      anchor point
+    </h2>
+    <p class="content">
+      Introduction 5
+
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptate perspiciatis odit! Doloremque,
+      quis et ipsam error consequatur hic aspernatur ab sed vitae reiciendis eaque nihil natus exercitationem
+      dolorum modi.
+    </p>
+  </div>
 
   <script type="text/javascript">
     let nIntervId;
@@ -112,7 +162,6 @@
 
     document.getElementById("start").addEventListener("click", changeColor);
     document.getElementById("stop").addEventListener("click", stopTextColor);
-
 
   </script>
 

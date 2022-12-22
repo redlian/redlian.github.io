@@ -1,20 +1,20 @@
-.section-m{
+.section-m {
   padding-top: 40px;
   padding-bottom: 80px;
 }
 
 @media screen and (max-width:768px) {
-  .index-about-me{
+  .index-about-me {
     display: none;
   }
 }
 
-.title-h{
+.title-h {
   transform: scale(1);
   transition: all ease-in-out 1s;
 }
 
-.title-h:hover{
+.title-h:hover {
   transform: scale(1.2);
 }
 
@@ -72,4 +72,11 @@ li {
 
 li a i {
   /* margin-left: 0.5em; */
+}
+
+.content {
+  padding: 12px;
+  border: 1px solid gray;
+  border-radius: 6px;
+  margin: 1.5px 1.5px 6px 1.5px;
 }
