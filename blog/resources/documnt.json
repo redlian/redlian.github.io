@@ -1,0 +1,27 @@
+{
+  "categories": "",
+  "contents": [
+    {
+      "title": "Title 1",
+      "desc": ""
+    },
+    {
+      "title": "Title 2",
+      "desc": ""
+    }
+  ],
+  "skills": [
+    "java",
+    "spring boot",
+    "spring mvc",
+    "ant",
+    "shell",
+    "javaserver faces",
+    "oracle",
+    "mysql",
+    "postgresql",
+    "javascript",
+    "html",
+    "css"
+  ]
+}
