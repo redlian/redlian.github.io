@@ -47,7 +47,7 @@
     <div class="container">
       <div class="row ">
         <!-- Menu -->
-        <div class="col-lg-4 pr-lg-5 index-about-me">
+        <div class="col-md-4 pr-md-5 index-about-me">
           <div id="my_box">
             <h5 class="text">About Me</h5>
             <div style="text-align: center;">
@@ -78,27 +78,53 @@
           </div>
         </div>
         <!-- Content -->
-        <div class="col-lg-8">
-          <div class="col-lg-10 ">
-            <h3>Title 1</h3>
-            <p class="content">
+        <div class="col-md-8">
+          <div class="col-md-12 ">
+            <h3>Form Control</h3>
+            <div class="content">
               <a href="#anchor-point">
                 anchor-point
               </a>
               Introduction
-            </p>
+              <div id="_subscribe" class="custom-control custom-switch ">
+                <input type="checkbox" name="Subscribe" id="subscribe" class="custom-control-input ">
+                <label for="subscribe" class="custom-control-label">Subscribe</label>
+              </div>
+              <form>
+                <div class="form-group p-3 mb-2 ">
+                  <label for="formControlRange">Example Range input</label>
+                  <input type="range" class="form-control-range" id="formControlRange" min="200" max="1000" value="200">
+                </div>
+              </form>
+              <div class="custom-file">
+                <input type="file" name="" id="txtFile" class="custom-file-input">
+                <label for="txtFile" class="custom-file-label">Upload</label>
+              </div>
+              <div style="display: flex; justify-content: space-around;">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" name="radisMember" id="radisMember" class="custom-control-input">
+                  <label for="radisMember" class="custom-control-label">Member</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" name="radisPublish" id="radisPublish" class="custom-control-input">
+                  <label for="radisPublish" class="custom-control-label">Publish</label>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-10 ">
-            <h3>Title 2</h3>
-            <p class="content">
-              Introduction 2
-
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam impedit architecto similique asperiores,
-              deleniti doloremque expedita corporis veritatis amet praesentium saepe quod est ducimus, minus fugit
-              repellendus placeat consequatur magni.
-            </p>
+          <div class="col-md-12">
+            <h3>Media</h3>
+            <div class="content media border m-1 p-3">
+              <img src="/assets/img/GitHub-Logo.png" width="200" height="200" alt="" class="img-thumbnail">
+              <div class="media-body ml-2 align-self-start">
+                <h4>GitHub</h4>
+                <p>Repository</p>
+                <p>Project </p>
+                <p>Side</p>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-10 ">
+          <div class="col-md-12 ">
             <h3>Title 3</h3>
             <p class="content">
               Introduction 3
@@ -108,7 +134,7 @@
               repellendus placeat consequatur magni.
             </p>
           </div>
-          <div class="col-lg-10 ">
+          <div class="col-md-12 ">
             <h3>Title 4</h3>
             <p class="content">
               Introduction 4
@@ -118,11 +144,13 @@
               dolorum modi.
             </p>
           </div>
-          <div class="col-lg-10 ">
+          <div class="col-md-12 ">
             <h3>Experience</h3>
-            <p class="content">
-              In fintch(Fubon, Tcb, Esun) almost 4 years.
-              ris. (cipher files, HiCos, AES, RSA) half year.
+            <div class="content">
+              <p>
+                In fintch(Fubon, Tcb, Esun) almost 4 years.
+                ris. (cipher files, HiCos, AES, RSA) half year.
+              </p>
 
               Oracle, PostgreSql, MySql.
               Java, Ant, Shell, Javascript, Html, Css.
@@ -130,8 +158,7 @@
               Vue, Primefaces.
               git.
               WebSphere App Server.
-
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -153,8 +180,6 @@
 
   <script type="text/javascript">
     let nIntervId;
-
-    console.log($('#my_box'));
 
     function changeColor() {
       // check if an interval has already been set up
