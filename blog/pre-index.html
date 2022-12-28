@@ -43,7 +43,7 @@
     </nav>
   </header>
 
-  <section class="section-m">
+  <div class="section-m">
     <div class="container">
       <div class="row ">
         <!-- Menu -->
@@ -79,7 +79,7 @@
         </div>
         <!-- Content -->
         <div class="col-md-8">
-          <div class="col-md-12 ">
+          <div id="formcontrol" class="col-md-12 ">
             <h3>Form Control</h3>
             <div class="content">
               <a href="#anchor-point">
@@ -112,7 +112,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12">
+          <div id="media" class="col-md-12">
             <h3>Media</h3>
             <div class="content media border m-1 p-3">
               <img src="/assets/img/GitHub-Logo.png" width="200" height="200" alt="" class="img-thumbnail">
@@ -124,7 +124,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-12 ">
+          <div id="badeg" class="col-md-12 ">
             <h3>Badge</h3>
             <div class="content">
               <button class="btn btn-light">
@@ -140,18 +140,93 @@
               <h4>等待人數 <span class="badge badge-warning badge-pill">100 人</span></h4>
               </p>
             </div>
-            <p class="content">
-              Introduction 3
+          </div>
+          <div id="list-group" class="col-md-12 ">
+            <h3>List Group</h3>
+            <div class="content">
+              "ul" list-group
+              <div class="container mt-3">
+                <ul class="list-group ">
+                  <li class="list-group-item">New Message</li>
+                  <li class="list-group-item active">New Book</li>
+                  <li class="list-group-item disabled">New Book</li>
+                </ul>
+              </div>
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam impedit architecto similique asperiores,
-              deleniti doloremque expedita corporis veritatis amet praesentium saepe quod est ducimus, minus fugit
-              repellendus placeat consequatur magni.
-            </p>
+          <div id="combobox" class="col-md-12 ">
+            <h3>Combobox group</h3>
+            <div class="content btn-group" role="group" aria-label="Button group with nested dropdown">
+              <button type="button" class="btn btn-secondary">1</button>
+              <button type="button" class="btn btn-secondary">2</button>
+
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Dropdown link</a>
+                  <a class="dropdown-item" href="#">Dropdown link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="nav" class="col-md-12 ">
+            <h3>nav</h3>
+            <div class=" container mt-3">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link" data-toggle="tab">nav link</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#fade" class="nav-link active" data-toggle="tab">nav link2</a>
+                </li>
+
+                <li class="nav-item dropup">
+                  <button class="nav-link dropdown-toggle" data-toggle="dropdown">nav link 3</button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#combobox">Dropdown link</a>
+                    <a class="dropdown-item" href="#">Dropdown link 2</a>
+                  </div>
+                </li>
+
+              </ul>
+              <!-- content -->
+              <div class="tab-content">
+                <div class="tab-pane show " id="home" role="tabpanel">
+                  <div class="media border rounded-sm p-3">
+                    <div class="media-body ml-3">
+                      Home tab
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade show active" id="fade">
+                  <div class="media border rounded-sm p-3">
+                    <div class="media-body ml-3">
+                      Fade tab
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="dropdown">
+                  dropdown tab
+                </div>
+              </div>
+            </div>
+
+
           </div>
           <div class="col-md-12 ">
-            <h3>Title 4</h3>
+            <h3>Title 5</h3>
             <p class="content">
-              Introduction 4
+              Introduction 5
 
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptate perspiciatis odit! Doloremque,
               quis et ipsam error consequatur hic aspernatur ab sed vitae reiciendis eaque nihil natus exercitationem
@@ -177,7 +252,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
   <div class="container">
     <h2>
       <a id="anchor-point" href="#"></a>
