@@ -1,5 +1,6 @@
 body {
-  font-family: "Noto Sans TC", sans-serif; /* 思源黑體*/
+  font-family: "Noto Sans TC", sans-serif;
+  /* 思源黑體*/
   /* font-family: "Crimson Pro", serif; */
   /* font-family: 'Indie Flower', cursive; */
   /* font-size: 52px; */
@@ -38,7 +39,7 @@ body {
   padding: 1.6rem 1.6rem 1.6rem 0;
 }
 
-.clock{
+.clock {
   text-align: center;
   color: aliceblue;
   font-size: 100px;
@@ -117,34 +118,33 @@ body {
 }
 
 .bg-day {
-  background-image: url(../assets/img/bg-image-daytime.jpg);
+  background-image: url(/assets/img/bg-image-daytime.jpg);
 }
 
 @media screen and (min-width: 768px) {
   .bg-day {
-    background-image: url(../assets/img/bg-image-daytime.jpg);
+    background-image: url(/assets/img/bg-image-daytime.jpg);
   }
 }
 
 @media screen and (min-width: 992px) {
   .bg-day {
-    background-image: url(../assets/img/bg-image-daytime.jpg);
+    background-image: url(/assets/img/bg-image-daytime.jpg);
   }
 }
 
 .bg-night {
-  background-image: url(../assets/img/bg-night.jpg);
+  background-image: url(/assets/img/bg-night.jpg);
 }
 
 @media screen and (min-width: 768px) {
   .bg-night {
-    background-image: url(../assets/img/bg-night.jpg);
+    background-image: url(/assets/img/bg-night.jpg);
   }
 }
 
 @media screen and (min-width: 992px) {
   .bg-night {
-    background-image: url(../assets/img/bg-night.jpg);
+    background-image: url(/assets/img/bg-night.jpg);
   }
 }
-
