@@ -62,3 +62,18 @@ dropup, dropright
       </div>
     </nav>
 ```
+
+## Jumbotron
+大螢幕廣告實作
+```html
+<div class="jumbotron"></div>
+```
+
+## Card
+
+## Pagination
+
+## Breadcrumb
+
+## Progressbar
+
