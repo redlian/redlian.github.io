@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrollspy Practice</title>
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <link rel="stylesheet" href="/plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="/plugins/bootstrap/bootstrap-4.6.2-dist/css/bootstrap.min.css" />
+  <script src="/plugins/jquery/jquery-3.6.3.min.js"></script>
+  <script src="/plugins/bootstrap/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+  body {
+    position: relative;
+  }
+</style>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <header>
+    <nav id="navbar-example2" class="navbar navbar-light bg-light ">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#fat">@fat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mdo">@mdo</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#one">one</a>
+              <a class="dropdown-item" href="#two">two</a>
+              <div role="separator" class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#three">three</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 col-md-6" data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <h4 id="fat">@fat</h4>
+        <img src="/assets/img/GitHub-Logo.png" width="500px" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus corrupti, ex velit eius perspiciatis
+          fugit
+          sapiente iusto voluptas odit illum deleniti inventore, quam, error numquam dolores molestias ab? Inventore,
+          numquam.</p>
+        <h4 id="mdo">@mdo</h4>
+        <img src="/assets/img/GitHub-Logo.png" width="500px" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus corrupti, ex velit eius perspiciatis
+          fugit
+          sapiente iusto voluptas odit illum deleniti inventore, quam, error numquam dolores molestias ab? Inventore,
+          numquam.</p>
+        <h4 id="one">one</h4>
+        <img src="/assets/img/GitHub-Logo.png" width="500px" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus corrupti, ex velit eius perspiciatis
+          fugit
+          sapiente iusto voluptas odit illum deleniti inventore, quam, error numquam dolores molestias ab? Inventore,
+          numquam.</p>
+        <h4 id="two">two</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus corrupti, ex velit eius perspiciatis
+          fugit
+          sapiente iusto voluptas odit illum deleniti inventore, quam, error numquam dolores molestias ab? Inventore,
+          numquam.</p>
+        <h4 id="three">three</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus corrupti, ex velit eius perspiciatis
+          fugit
+          sapiente iusto voluptas odit illum deleniti inventore, quam, error numquam dolores molestias ab? Inventore,
+          numquam.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>

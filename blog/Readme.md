@@ -77,3 +77,17 @@ dropup, dropright
 
 ## Progressbar
 
+## sticky
+
+如果想讓top navbar 固定在網頁上方
+可以設定
+if z-index of -1, it will be placed behind the text
+```css
+.navbarOnthetop{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+```
+https://www.w3schools.com/css/css_positioning.asp
+https://www.w3schools.com/css/css_z-index.asp 
