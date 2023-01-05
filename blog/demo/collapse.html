@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collapse Practice</title>
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <link rel="stylesheet" href="/plugins/themify-icons/themify-icons.css">
+  <link rel="stylesheet" href="/plugins/bootstrap/bootstrap-4.6.2-dist/css/bootstrap.min.css" />
+  <script src="/plugins/jquery/jquery-3.6.3.min.js"></script>
+  <script src="/plugins/bootstrap/bootstrap-4.6.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container mt-2">
+      <h1>Collapses</h1>
+    </div>
+  </header>
+
+  <div class="container mt-2">
+    <div class="row">
+      <p>
+        <a class="btn btn-primary" data-toggle="collapse" href="#AAA" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          Link with href
+        </a>
+        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+          aria-expanded="false" aria-controls="collapseExample">
+          Button with data-target
+        </button>
+      </p>
+      <div class="collapse show" id="AAA">
+        <div class="card card-body">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique voluptatem consequuntur quasi eos animi
+          rem cumque odit modi harum minus neque, eaque saepe corrupti, repellat itaque tempore quos quisquam. Saepe.
+        </div>
+      </div>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the
+          user
+          activates the relevant trigger.
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
